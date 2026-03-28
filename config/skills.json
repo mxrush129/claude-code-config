@@ -1,0 +1,14 @@
+{
+  "skills": [
+    {
+      "name": "frontend-design",
+      "source": "anthropics/skills",
+      "sourceType": "github"
+    },
+    {
+      "name": "find-skills",
+      "source": "vercel-labs/skills",
+      "sourceType": "github"
+    }
+  ]
+}
