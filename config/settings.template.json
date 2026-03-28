@@ -1,0 +1,37 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "{{ANTHROPIC_AUTH_TOKEN}}",
+    "ANTHROPIC_BASE_URL": "{{ANTHROPIC_BASE_URL}}",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "{{ANTHROPIC_DEFAULT_HAIKU_MODEL}}",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "{{ANTHROPIC_DEFAULT_OPUS_MODEL}}",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "{{ANTHROPIC_DEFAULT_SONNET_MODEL}}",
+    "ANTHROPIC_MODEL": "{{ANTHROPIC_MODEL}}",
+    "ANTHROPIC_REASONING_MODEL": "{{ANTHROPIC_REASONING_MODEL}}",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
+    "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/notify-done.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true,
+    "frontend-design@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": false,
+  "effortLevel": "high",
+  "skipDangerousModePermissionPrompt": true
+}
