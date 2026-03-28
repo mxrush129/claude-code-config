@@ -2,6 +2,8 @@
 
 Personal Claude Code configuration template for syncing across machines.
 
+**[中文文档](README.zh-CN.md)**
+
 ## Quick Start
 
 ### Prerequisites
