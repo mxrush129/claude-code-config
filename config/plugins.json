@@ -1,0 +1,37 @@
+{
+  "marketplaces": [
+    {
+      "name": "claude-plugins-official",
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "name": "anthropic-agent-skills",
+      "source": "github",
+      "repo": "anthropics/skills"
+    }
+  ],
+  "plugins": [
+    {
+      "id": "superpowers@claude-plugins-official",
+      "name": "superpowers",
+      "marketplace": "claude-plugins-official"
+    },
+    {
+      "id": "frontend-design@claude-plugins-official",
+      "name": "frontend-design",
+      "marketplace": "claude-plugins-official"
+    },
+    {
+      "id": "skill-creator@claude-plugins-official",
+      "name": "skill-creator",
+      "marketplace": "claude-plugins-official"
+    },
+    {
+      "id": "document-skills@anthropic-agent-skills",
+      "name": "document-skills",
+      "marketplace": "anthropic-agent-skills"
+    }
+  ],
+  "note": "dashboard@claude-dashboard is a local plugin, install separately"
+}
