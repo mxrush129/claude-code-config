@@ -31,6 +31,11 @@
       "id": "document-skills@anthropic-agent-skills",
       "name": "document-skills",
       "marketplace": "anthropic-agent-skills"
+    },
+    {
+      "id": "ralph-loop@claude-plugins-official",
+      "name": "ralph-loop",
+      "marketplace": "claude-plugins-official"
     }
   ],
   "note": "dashboard@claude-dashboard is a local plugin, install separately"

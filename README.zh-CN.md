@@ -44,6 +44,7 @@ cp config/settings.env.example config/settings.env
 | [frontend-design](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | 生产级前端 UI 生成 |
 | [skill-creator](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | 创建、改进和测试技能 |
 | [document-skills](https://github.com/anthropics/skills) | anthropics/skills | Excel、Word、PowerPoint、PDF 文档处理 |
+| [ralph-loop](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | 自引用迭代循环，持续工作直到任务完成 |
 
 ### 技能
 

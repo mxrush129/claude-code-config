@@ -46,6 +46,7 @@ cp config/settings.env.example config/settings.env
 | [frontend-design](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | Production-grade frontend UI generation |
 | [skill-creator](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | Create, improve and test skills |
 | [document-skills](https://github.com/anthropics/skills) | anthropics/skills | Excel, Word, PowerPoint, PDF processing |
+| [ralph-loop](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | Iterative self-referential loop until task completion |
 
 ### Skills
 
