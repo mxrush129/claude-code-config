@@ -36,12 +36,35 @@ cp config/settings.env.example config/settings.env
 
 ## 包含内容
 
-| 文件 | 说明 |
+### 插件
+
+| 插件 | 来源 | 说明 |
+|------|------|------|
+| [superpowers](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | TDD、调试、代码审查、计划执行工作流 |
+| [frontend-design](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | 生产级前端 UI 生成 |
+| [skill-creator](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | 创建、改进和测试技能 |
+| [document-skills](https://github.com/anthropics/skills) | anthropics/skills | Excel、Word、PowerPoint、PDF 文档处理 |
+
+### 技能
+
+| 技能 | 来源 |
 |------|------|
-| settings.template.json | 主配置（模型、hooks、插件） |
-| hooks/ | 自定义通知脚本 |
-| plugins.json | 插件安装清单 |
-| skills.json | 技能安装清单 |
+| frontend-design | [anthropics/skills](https://github.com/anthropics/skills) |
+| find-skills | [vercel-labs/skills](https://github.com/vercel-labs/skills) |
+
+### Hooks
+
+| Hook | 触发时机 | 说明 |
+|------|---------|------|
+| notify-done.sh / notify-done.ps1 | 任务停止时 | Claude Code 完成工作时弹出 Windows 通知 |
+
+### 配置
+
+| 配置项 | 值 |
+|--------|-----|
+| 模型 | `opus[1m]`（1M 上下文窗口） |
+| Effort Level | `high` |
+| Memory 模板 | 见 `memory-templates/MEMORY.example.md` |
 
 ## 从当前机器更新配置
 

@@ -38,12 +38,52 @@ cp config/settings.env.example config/settings.env
 
 ## What's included
 
-| Item | Description |
-|------|-------------|
-| settings.template.json | Main settings (model, hooks, plugins) |
-| hooks/ | Custom notification hooks |
-| plugins.json | Plugin installation list |
-| skills.json | Skill installation list |
+### Plugins
+
+| Plugin | Source | Description |
+|--------|--------|-------------|
+| [superpowers](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | TDD, debugging, code review, plan execution workflow |
+| [frontend-design](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | Production-grade frontend UI generation |
+| [skill-creator](https://github.com/anthropics/claude-plugins-official) | anthropics/claude-plugins-official | Create, improve and test skills |
+| [document-skills](https://github.com/anthropics/skills) | anthropics/skills | Excel, Word, PowerPoint, PDF processing |
+
+### Skills
+
+| Skill | Source |
+|-------|--------|
+| frontend-design | [anthropics/skills](https://github.com/anthropics/skills) |
+| find-skills | [vercel-labs/skills](https://github.com/vercel-labs/skills) |
+
+### Hooks
+
+| Hook | Trigger | Description |
+|------|---------|-------------|
+| notify-done.sh / notify-done.ps1 | Task Stop | Windows popup notification when Claude Code finishes working |
+
+### Settings
+
+| Setting | Value |
+|---------|-------|
+| Model | `opus[1m]` (1M context window) |
+| Effort Level | `high` |
+| Memory Template | Provided in `memory-templates/MEMORY.example.md` |
+
+## Directory Structure
+
+```
+claude-code-config/
+├── install.sh                  # Linux/Mac installer
+├── install.ps1                 # Windows installer
+├── export.sh                   # Export current config to template
+├── config/
+│   ├── settings.template.json  # Settings template (secrets as placeholders)
+│   ├── settings.env.example    # Environment variables example
+│   ├── hooks/                  # Notification hooks
+│   ├── plugins.json            # Plugin manifest
+│   └── skills.json             # Skill manifest
+└── memory-templates/
+    └── MEMORY.example.md       # Memory file template
+```
 
 ## Update config from current machine
 
