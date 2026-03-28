@@ -1,0 +1,10 @@
+# Sensitive
+*.env
+settings.json
+config/settings.json
+!config/settings.template.json
+
+# Temp
+*.tmp
+.DS_Store
+Thumbs.db
